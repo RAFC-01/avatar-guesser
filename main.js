@@ -125,7 +125,7 @@ function loadApp(){
         let photo = photos[randomPhotoIndex];
         // load the photo
         let img = new Image();
-        img.src = encodeURI(`images/${currentEpisode}/${photo}`);
+        img.src = encodeURI(`Images/${currentEpisode}/${photo}`);
         img.onload = () => {
             episodePhoto.style.backgroundImage = `url(${img.src})`;
         }

@@ -1,2 +1,2 @@
 theme: minima
-destination: ./_site
+baseurl: /avatar-guesser

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Guesser</title>
+    <script>console.clear()</script>
+    <link rel="stylesheet" href="style.css">
+    <script src="episodes.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="episodePhoto"></div>
+    <div id="guessBtn">Guess ( enter )</div>
+    <div id="scores">
+        <div id="currentScore">Current Score: 0</div>
+        <div id="highScore">High Score: 0</div>
+    </div>
+    <div id="inputField">
+        <div id="sugestion"></div>
+        <input type="text" name="epName" id="epName" autofocus placeholder="Guess the episode name..." spellcheck="false" autocomplete="off">
+    </div>
+    <div id="looseScreen">
+        <div>You Lost!</div>
+        <div id="tryAgainButton">Try Again!</div>
+        <div id="correctAnswer"></div>
+    </div>
+</body>
+</html>

@@ -2,14 +2,16 @@ body{
     background-color: #1d1d1d;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
+    margin: 0px;
 }
 #episodePhoto{
     width: 960px;
-    height: 540px;
+    /* height: 540px; */
     background-repeat:no-repeat;
     background-size:contain;
     margin: auto;
     margin-top: 20px;
+    aspect-ratio: 16 / 9;
 }
 #guessBtn{
     padding: 15px 45px;
@@ -86,4 +88,13 @@ body{
 #correctAnswer{
     text-align: center;
     font-size: 35px;
+}
+@media screen and (max-width: 960px) {
+    #episodePhoto{
+        width: 100%;
+        margin-top: 0px;
+    }
+    #guessBtn{
+        font-size: 15px;
+    }
 }
